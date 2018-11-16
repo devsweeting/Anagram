@@ -3,7 +3,6 @@ require ('pry')
 require ('rspec')
 
 describe('Anagram#anagram_check') do
-# anagram method
   it("Expect 'hello' to match 'hello'") do
     word = Anagram.new('hello')
     expect(word.anagram_check('hello')).to(eq(true))
@@ -34,12 +33,3 @@ describe('Anagram#anagram_check') do
     expect(word.anagram_check('Old West Action')).to(eq(true))
   end
 end
-
-
-
-
-
-# is a vowel method
-# it("Expect 'hello' to return 2 vowels") do
-#   expect(count_vowels('hello')).to(eq(2))
-# end
