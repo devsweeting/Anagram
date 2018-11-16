@@ -1,8 +1,8 @@
 require ('rspec')
-require('example')
+require('anagram')
 require ('pry')
 
-describe('#cat') do
+describe('#check_anagram') do
   it("#makes the cat meow") do
     expect(meow()).to(eq("meow"))
   end
