@@ -3,8 +3,8 @@ require('anagram')
 require ('pry')
 
 describe('#check_anagram') do
-  it("#makes the cat meow") do
-    expect(meow()).to(eq("meow"))
+  it("#expect 'a' to match 'a'") do
+    expect(check_anagram('a')).to(eq('true'))
   end
 
 end
