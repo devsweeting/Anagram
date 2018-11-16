@@ -8,8 +8,8 @@ describe('anagram') do
     expect(anagram_check('hello', 'hello')).to(eq(true))
   end
 
-  it("Expect 'hello' to match 'hello'") do
-    expect(anagram_check('hello', 'hell')).to(eq(false))
+  it("Expect 'hi' to match 'bye'") do
+    expect(anagram_check('hi', 'bye')).to(eq(false))
   end
 
   it("Expect 'HEllo' to match 'heLLO'") do
