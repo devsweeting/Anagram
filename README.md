@@ -1,4 +1,5 @@
-## Anagram - Week 1 Independent Project Ruby
+# Anagram
+## Week 1 Independent Project Ruby
 
 #### By Devin Sweeting
 
@@ -15,12 +16,15 @@ This project tests our basic understanding of Ruby concepts such as creating a c
 * _Open file in Atom_
 
 ## Specifications
+* See anagram_spec.rb for full specs
 
+EXAMPLE:
 new class: word = Anagram.new('Clint Eastwood')
 
-- Expect 'Clint Eastwood' to be an antigram of 'Old West Action'.
+- Expect 'Clint Eastwood' to be an anagram of 'Old West Action'.
 
   Input: word.anagram_check('Old West Action')
+
   Output: True
 
 ## Learning Objectives

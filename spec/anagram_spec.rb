@@ -28,7 +28,7 @@ describe('Anagram#anagram_check') do
     expect(word.anagram_check('bye')).to(eq(false))
   end
 
-  it("Expect 'Clint Eastwood' to be an antigram of 'Old West Action'") do
+  it("Expect 'Clint Eastwood' to be an anagram of 'Old West Action'") do
     word = Anagram.new('Clint Eastwood')
     expect(word.anagram_check('Old West Action')).to(eq(true))
   end
