@@ -11,10 +11,11 @@
     gram = word2.downcase().split('').sort()
     if (ana == gram)
       puts "This is an anagram!"
+      return true
     else
-      match = "this is NOT an anagram!"
+      puts "this is NOT an anagram!"
+      return false
     end
-    puts match
   end
 
 # end
