@@ -13,10 +13,14 @@
   end
 
   def anagram_check(word1, word2)
-    vowels = ["a", "e", "i", "o", "u"]
+    count1 = word1.chars.count {|char| "aeiou".include?(char)}
+    count2 = word2.chars.count {|char| "aeiou".include?(char)}
     ana = word1.downcase().split('').sort()
     gram = word2.downcase().split('').sort()
-    if (ana == gram)
+    if ((count1 == 0) || (count2 == 0))
+      puts "Not even a word!"
+      return false
+    elsif (ana == gram)
       puts "This is an anagram!"
       return true
     else
