@@ -1,6 +1,7 @@
 require('anagram')
 require ('pry')
 require ('rspec')
+require ('ruby-dictionary')
 
 describe('Phrase#anagram') do
   it("Expect 'hello' to match 'hello'") do
@@ -37,4 +38,12 @@ describe('Phrase#anagram') do
     word = Phrase.new('racecar')
     expect(word.palindrome()).to(eq(true))
   end
+
+# ---------failed tests for dictionary -----------
+
+  # it("Expect swiggty to NOT be a word") do
+  #   word = Phrase.new('swiggity')
+  #   expect(word.exists?(@name)).to(eq(false))
+  # end
+
 end
