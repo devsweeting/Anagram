@@ -20,6 +20,10 @@ describe('anagram') do
     expect(anagram_check('trn', 'wtm')).to(eq(false))
   end
 
+  it("Expect 'hi' to be an antigram of 'bye'") do
+    expect(anagram_check('hi', 'bye')).to(eq(false))
+  end
+
 # is a vowel method
   it("Expect 'hello' to return 2 vowels") do
     expect(count_vowels('hello')).to(eq(2))

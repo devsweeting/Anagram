@@ -20,6 +20,9 @@
     if ((count1 == 0) || (count2 == 0))
       puts "Not even a word!"
       return false
+    elsif (ana.each.any?{|char| gram.include?(char)}) == false
+      puts "This is an antigram!"
+      return false
     elsif (ana == gram)
       puts "This is an anagram!"
       return true
@@ -30,3 +33,9 @@
   end
 
 # end
+ana = ['a','s','s']
+gram = ['b','a','s','s']
+anti = ['f','l','y']
+grams = ['b','a','d']
+anti.each.any?{|char| grams.include?(char)}
+ana.each.any?{|char| gram.include?(char)}
