@@ -16,10 +16,12 @@ This project tests our basic understanding of Ruby concepts such as creating a c
 
 ## Specifications
 
-describe('Anagram#anagram_check') do
-it("Expect 'Clint Eastwood' to be an antigram of 'Old West Action'") do
-  word = Anagram.new('Clint Eastwood')
-  expect(word.anagram_check('Old West Action')).to(eq(true))
+new class: word = Anagram.new('Clint Eastwood')
+
+- Expect 'Clint Eastwood' to be an antigram of 'Old West Action'.
+
+  Input: word.anagram_check('Old West Action')
+  Output: True
 
 ## Learning Objectives
 * Check if two words are anagrams. If they are, your method should return something like: "These words are anagrams."
