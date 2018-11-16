@@ -25,6 +25,25 @@ class Anagram
       return false
     end
   end
+end
+
+
+# -------------- Notes and extra methods ----------------
+
+# ana = ['a','s','s']
+# gram = ['b','a','s','s']
+# anti = ['f','l','y']
+# grams = ['b','a','d']
+# anti.each.any?{|char| grams.include?(char)}
+# ana.each.any?{|char| gram.include?(char)}
+#
+# def count_vowels(string)
+#   count = string.chars.count {|char| "aeiou".include?(char)}
+#   puts count
+#   return count
+# end
+
+
 
   # def anagram_check(word1, word2)
   #   count1 = word1.chars.count {|char| "aeiou".include?(char)}
@@ -51,21 +70,3 @@ class Anagram
   #   puts count
   #   return count
   # end
-
-end
-
-
-# -------------- Notes and extra methods ----------------
-
-# ana = ['a','s','s']
-# gram = ['b','a','s','s']
-# anti = ['f','l','y']
-# grams = ['b','a','d']
-# anti.each.any?{|char| grams.include?(char)}
-# ana.each.any?{|char| gram.include?(char)}
-#
-# def count_vowels(string)
-#   count = string.chars.count {|char| "aeiou".include?(char)}
-#   puts count
-#   return count
-# end

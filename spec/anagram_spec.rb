@@ -29,9 +29,18 @@ describe('Anagram#anagram_check') do
     expect(word.anagram_check('bye')).to(eq(false))
   end
 
+  it("Expect 'Clint Eastwood' to be an antigram of 'Old West Action'") do
+    word = Anagram.new('Clint Eastwood')
+    expect(word.anagram_check('Old West Action')).to(eq(true))
+  end
+
+end
+
+
+
+
 
 # is a vowel method
-  # it("Expect 'hello' to return 2 vowels") do
-  #   expect(count_vowels('hello')).to(eq(2))
-  # end
-end
+# it("Expect 'hello' to return 2 vowels") do
+#   expect(count_vowels('hello')).to(eq(2))
+# end
