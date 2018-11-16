@@ -20,8 +20,8 @@ describe('Anagram#anagram_check') do
   end
 
   it("Expect 'trn' to not match 'wtm'") do
-    word = Anagram.new('trn')
-    expect(word.anagram_check('wtm')).to(eq(false))
+    word = Anagram.new('swooty')
+    expect(word.anagram_check('sw00ty')).to(eq(false))
   end
 
   it("Expect 'hi' to be an antigram of 'bye'") do
@@ -33,7 +33,6 @@ describe('Anagram#anagram_check') do
     word = Anagram.new('Clint Eastwood')
     expect(word.anagram_check('Old West Action')).to(eq(true))
   end
-
 end
 
 
