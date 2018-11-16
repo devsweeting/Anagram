@@ -1,10 +1,10 @@
-require ('rspec')
 require('anagram')
 require ('pry')
+require ('rspec')
 
-describe('#check_anagram') do
-  it("#expect 'a' to match 'a'") do
-    expect(check_anagram('a')).to(eq('true'))
+describe('anagram') do
+
+  it("Expect 'hello' to match 'hello'") do
+    expect(anagram_check('hello', 'hello')).to(eq(true))
   end
-
 end
